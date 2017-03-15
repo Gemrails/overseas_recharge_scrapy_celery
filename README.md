@@ -13,10 +13,17 @@
 
 
 `[program:consumer_celery]`
+
 `command=/usr/bin/celery worker -A consumer_in`
+
 `directory=/xxx/xxx`
+
 `stdout_logfile=/data/logs/celery.log`
+
 `autostart=true`
+
 `autorestart=true`
+
 `redirect_stderr=true`
+
 `stopsignal=QUIT`
