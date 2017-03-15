@@ -1,6 +1,7 @@
 # overseas_recharge_scrapy_celery
 
-![海外商品汇总]
+>[海外商品汇总]
+
 
 
 ### celery 启动
@@ -12,18 +13,18 @@
 * 利用supervisord作为worker的消费管理
 
 
-`[program:consumer_celery]`
+`[program:consumer_celery]
 
-`command=/usr/bin/celery worker -A consumer_in`
+command=/usr/bin/celery worker -A consumer_in
 
-`directory=/xxx/xxx`
+directory=/xxx/xxx
 
-`stdout_logfile=/data/logs/celery.log`
+stdout_logfile=/data/logs/celery.log
 
-`autostart=true`
+autostart=true
 
-`autorestart=true`
+autorestart=true
 
-`redirect_stderr=true`
+redirect_stderr=true
 
-`stopsignal=QUIT`
+stopsignal=QUIT`
