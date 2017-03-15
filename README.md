@@ -1,7 +1,7 @@
 # overseas_recharge_scrapy_celery
 海外商品汇总
 
-##### celery 启动
+#### celery 启动
 celery -A consumer_in worker --loglevel=info
 
 #### 异步消费
