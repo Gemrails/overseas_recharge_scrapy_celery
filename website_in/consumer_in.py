@@ -23,7 +23,7 @@ app = Celery('tasks', broker='redis://localhost:6379/0')
 def get_input_mysql(record):
     mm = record['get']
     '''
-    dbname^_^name^_^price^_^url^_^{'other_2', 'other_2'}
+    sql结构: dbname^_^name^_^price^_^url^_^{'other_2', 'other_2'}
     '''
     mmlist = mm.split('^_^')
     dbname = mmlist[0]
